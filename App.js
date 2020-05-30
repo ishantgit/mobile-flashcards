@@ -19,6 +19,8 @@ import Deck from './components/Deck';
 import AddCard from './components/AddCard';
 import Constants from 'expo-constants';
 import {setLocalNotification} from "./utils/helpers";
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
 
 
 const instructions = Platform.select({
@@ -117,10 +119,12 @@ export default class App extends React.Component{
   }
   render() {
     return <Provider store={createStore(reducer)}>
+      <SafeAreaProvider>
       <View style={{flex: 1}}>
         <AppStatusBar backgroundColor={purple} barStyle="light-content" />
         <AppContainer/>
       </View>
+      </SafeAreaProvider>
     </Provider>
   }
 }
