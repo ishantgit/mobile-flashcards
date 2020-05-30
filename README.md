@@ -26,6 +26,10 @@ The project can be run on ios
 - `npm run ios`
 
 ## Screenshots
+
+Android Simulator
+![screenshot3](screenshot_android.png)
+
 ![screenshot1](screenshot_first.png)
 
 ![screenshot2](screenshot_second.png) 
